@@ -59,6 +59,7 @@ hr {
 
 .wrapper-flex {
   display: flex;
+  gap: 10px;
 }
 .wrapper-flex .box {
   flex: 1;
@@ -100,6 +101,17 @@ hr {
   border: 2px solid green;
 }
 
+.wrapper-sticky {
+  height: 45vh;
+  position: relative;
+}
+
 .sticky {
-  height: 50vh;
+  display: inline-block;
+  padding: 20px;
+  background-color: orange;
+  position: sticky;
+  top: 30px;
+  color: white;
+  font-weight: bold;
 }

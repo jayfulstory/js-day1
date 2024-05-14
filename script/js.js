@@ -1,13 +1,29 @@
-let myNumber = "500";
-console.log(typeof myNumber);
+console.log("------------問題1----------");
+const greetings = [
+  "Happy Birthday!",
+  "Merry Christmas my love",
+  "A happy Christmas to all the family",
+  "You're all I want for Christmas",
+  "Get well soon",
+];
 
-myNumber = 500;
-console.log(typeof myNumber);
+for (let greeting of greetings) {
+  if (greeting.includes("Christmas")) {
+    console.log(greeting);
+  }
+}
 
-// let const = 1;
+console.log("------------問題2----------");
 
-const name = { firstname: "kim" };
-console.log(name.firstname);
-name.firstname = "lee";
+const cities = ["lonDon", "ManCHESTer", "BiRmiNGHAM", "liVERpoOL"];
 
-console.log(name.firstname);
+for (let city of cities) {
+  console.log(changeString(city));
+}
+
+function changeString(str) {
+  const result = str[0].toUpperCase() + str.toLowerCase().slice(1);
+  return result;
+}
+
+console.log("------------問題3----------");
