@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css layout</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style/layout.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const toStart = document.querySelector(".toStart");
+
+            const toStartHandler = () => {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            }
+
+            toStart.addEventListener('click', toStartHandler)
+        });
+    </script>
+</head>
+
+<body>
+    <div class="toStart">
+        <div>UP</div>
+        <div>UP</div>
+    </div>
+    <h1>CSS layout</h1>
+    <h3>flex</h3>
+    <div class="wrapper-flex">
+        <div class="box box1">1</div>
+        <div class="box box2">2</div>
+        <div class="box box3">3</div>
+    </div>
+    <hr>
+    <h3>grid</h3>
+    <div class="wrapper-grid">
+        <div class="box box1">1</div>
+        <div class="box box2">2</div>
+        <div class="box box3">3</div>
+        <div class="box box4">4</div>
+        <div class="box box5">5</div>
+        <div class="box box6">6</div>
+    </div>
+    <hr>
+    <h3>grid2</h3>
+    <div class="wrapper-grid2">
+        <div class="box box1">1</div>
+        <div class="box box2">2</div>
+        <div class="box box3">3</div>
+    </div>
+    <hr>
+    <h3>float</h3>
+    <div class="float-box box">float</div>
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti cupiditate quasi ipsum amet, possimus
+        voluptate minus quidem nulla odit labore harum at ratione numquam repellat ducimus! Laboriosam rem officiis eos.
+        Aperiam dolorum in eum ad nisi sunt quas debitis mollitia molestias atque amet dicta, voluptate similique
+        quibusdam, quos aliquid, nostrum necessitatibus? Aspernatur adipisci est doloremque suscipit hic voluptates
+        sequi architecto.
+        Voluptatem, natus perferendis commodi ea qui iusto omnis rem tenetur, quaerat aliquam et eos doloremque voluptas
+        ducimus nemo repudiandae ut mollitia. Consequatur rem aspernatur distinctio, debitis nostrum mollitia ullam
+        nisi?
+        Culpa animi nisi pariatur impedit autem similique maxime eos expedita? Tempore aliquam debitis, quidem corporis
+        reprehenderit ipsum error? Et, in! Facilis ex molestias culpa hic animi sed voluptatem suscipit sit.
+        Laboriosam voluptatum beatae numquam nobis modi vero deserunt, autem sunt ipsam iure natus dolorum officiis quas
+        maxime, magnam, fugit reprehenderit iste cum doloribus! Veritatis placeat ducimus maxime aut obcaecati
+        quibusdam.
+    </p>
+    <div class="sticky"></div>
+</body>
+
+</html>
